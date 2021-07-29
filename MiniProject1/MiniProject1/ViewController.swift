@@ -15,14 +15,23 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
+    
+    var clickCount = 0
+    
     @IBAction func revealButton(_ sender: UIButton) {
-        fact1.text = "I have a sister!"
-        fact2.text = "I'm captain of my ultimate frisbee team!"
-        fact3.text = "I try to be a coder but..."
+        clickCount+=1
+        if clickCount == 1 {
+            fact1.text = "I have an older sister!"
+        }
+        else if clickCount == 2 {
+            fact2.text = "I play ultimate frisbee"
+        }
+        else {
+            fact3.text = "I try to be an epic coder but..."
+        }
     }
+    
     
 }
 
