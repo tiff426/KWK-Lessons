@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var fact1: UILabel!
     @IBOutlet weak var fact2: UILabel!
     @IBOutlet weak var fact3: UILabel!
+    @IBOutlet weak var finalMessage: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +28,11 @@ class ViewController: UIViewController {
         else if clickCount == 2 {
             fact2.text = "I play ultimate frisbee"
         }
-        else {
+        else if clickCount == 3 {
             fact3.text = "I love kirby"
+        }
+        else {
+            finalMessage.text = "and that's all :))"
         }
     }
     
