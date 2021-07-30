@@ -11,12 +11,19 @@ class ViewController3: UIViewController {
     
     var name1 : String = ""
     @IBOutlet weak var address: UILabel!
+    @IBOutlet weak var adjTextField: UITextField!
+    @IBOutlet weak var adjLine: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        address.text = "\(name1),"
+        address.text = "However, \(name1) didn't think he was very good"
+    }
+    @IBAction func submitBut(_ sender: Any) {
+        if let adj = adjTextField.text {
+            adjLine.text = "One day, \(name1)'s very \(adj) mentor told him to be brave"
+        }
     }
     
 
@@ -29,5 +36,14 @@ class ViewController3: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToNext" {
+            let newDest = segue.destination as? ViewController4
+            if let line = adjTextField.text {
+                newDest?.sentence = line
+            }
+        }
+    }
 
 }

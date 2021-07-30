@@ -18,6 +18,7 @@
 		21917B0626B30B990053C093 /* MiniProject2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21917B0526B30B990053C093 /* MiniProject2UITests.swift */; };
 		21917B1726B3250A0053C093 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21917B1626B3250A0053C093 /* ViewController2.swift */; };
 		21917B1C26B3436A0053C093 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21917B1B26B3436A0053C093 /* ViewController3.swift */; };
+		21917B2926B392220053C093 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21917B2826B392220053C093 /* ViewController4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		21917B0726B30B990053C093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21917B1626B3250A0053C093 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		21917B1B26B3436A0053C093 /* ViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		21917B2826B392220053C093 /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				21917AE926B30B900053C093 /* MiniProject2.xcdatamodeld */,
 				21917B1626B3250A0053C093 /* ViewController2.swift */,
 				21917B1B26B3436A0053C093 /* ViewController3.swift */,
+				21917B2826B392220053C093 /* ViewController4.swift */,
 			);
 			path = MiniProject2;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21917B1726B3250A0053C093 /* ViewController2.swift in Sources */,
+				21917B2926B392220053C093 /* ViewController4.swift in Sources */,
 				21917AE526B30B900053C093 /* ViewController.swift in Sources */,
 				21917B1C26B3436A0053C093 /* ViewController3.swift in Sources */,
 				21917AE126B30B900053C093 /* AppDelegate.swift in Sources */,

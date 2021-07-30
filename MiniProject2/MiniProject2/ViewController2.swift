@@ -31,7 +31,7 @@ class ViewController2: UIViewController {
     
     @IBAction func displayBut(_ sender: Any) {
         if let name = nameTextField.text {
-            nameLine.text = "Hi \(name), I hope you are doing well"
+            nameLine.text = "There once was a coder named \(name)"
         }
     }
     
