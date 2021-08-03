@@ -58,20 +58,6 @@ class ToDoTableViewController: UITableViewController {
         if let nextAddToDoVC = segue.destination as? AddToDoViewController {
             nextAddToDoVC.previousToDoTVC = self
         }
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    
-    override func tableView(_ tabelView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let eachToDo = listOfToDo[indexPath.row]
-        performSegue(withIdentifier: "moveToCompletedToDoVC", sender: eachToDo)
-    }
-    
-    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let nextAddToDoVC = segue.destination as? AddToDoViewController {
-            nextAddToDoVC.previousToDoTVC = self
-        }
         
         if let nextCompletedToDoVC = segue.destination as? CompletedToDoViewController {
             if let choosenToDo = sender as? ToDoClass {
@@ -79,7 +65,15 @@ class ToDoTableViewController: UITableViewController {
                 nextCompletedToDoVC.previousToDoTVC = self
             }
         }
-    }*/
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let eachToDo = listOfToDo[indexPath.row]
+        performSegue(withIdentifier: "moveToCompletedToDoVC", sender: eachToDo)
+    }
     
 
 }

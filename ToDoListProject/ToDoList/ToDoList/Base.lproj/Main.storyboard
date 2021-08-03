@@ -45,7 +45,7 @@
         <!--Completed To Do View Controller-->
         <scene sceneID="4Um-Ad-djc">
             <objects>
-                <viewController id="86K-Xn-YTC" customClass="CompletedToDoViewController" sceneMemberID="viewController">
+                <viewController id="86K-Xn-YTC" customClass="CompletedToDoViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n4M-W0-br8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -58,8 +58,8 @@
                                     <action selector="completeTapped:" destination="86K-Xn-YTC" eventType="touchUpInside" id="Gq8-AC-yAD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To Do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5AI-ue-W2b">
-                                <rect key="frame" x="186" y="222" width="45" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To Do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsV-vH-GLu">
+                                <rect key="frame" x="186" y="213" width="45" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -71,7 +71,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="JU0-Bz-q4K"/>
                     <connections>
-                        <outlet property="toDoDisplay" destination="5AI-ue-W2b" id="uQN-de-4O0"/>
+                        <outlet property="toDoLabel" destination="zsV-vH-GLu" id="my9-Me-ASm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEb-sU-x5v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
